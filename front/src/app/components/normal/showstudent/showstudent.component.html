@@ -1,0 +1,41 @@
+
+<body>
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <mat-card class="mt20">
+             <h1><b><i>Student list in {{classname}} class</i></b></h1>
+            </mat-card>
+            <mat-card class="mt20">
+                <table border="1px" cellPadding="3px" cellSpacing="0px" class="tab"  >
+                    <tr class="heading">
+                        <th>Sr no.</th>
+                        <th >Student Name</th>
+                        <th>Last name</th>
+                        <th>Address</th>
+                        <th>Number</th>
+                    </tr>
+                    <tr *ngFor="let s of students; let i=index;">
+                        <td>
+                        {{i+1}}
+                        </td>
+                        <td >
+                            {{s.stdname}} 
+                            
+                        </td>
+                        <td>
+                            {{s.surname}}
+                        </td>
+                        
+                        <td>
+                             {{s.address}}
+                        </td>
+                        <td>
+                            {{s.number}}
+                        </td>
+                    </tr>
+                         
+                </table>
+            </mat-card>
+        </div>
+    </div>
+</body>

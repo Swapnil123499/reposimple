@@ -1,0 +1,89 @@
+<div class="bootstrap-wrapper">
+    <div class="container transbox">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 ">
+                <mat-card class="matclass">
+                    <h1>Add New Students</h1>
+                  <mat-card-content>
+                
+                    <div class="bootstrap-wrapper">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                               
+                <form (ngSubmit)="formSubmit()">
+                
+                    <mat-form-field class="w100" appearance="outline">
+                  
+                       <mat-label>Student first Name</mat-label>
+                  
+                       <input type="text" name="stdname" matInput
+                       placeholder="Enter here"
+                       required 
+                       [(ngModel)]="students.stdname"
+                       >
+                  
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                  
+                        <mat-label>Student last Name</mat-label>
+                   
+                        <input type="text" name="surname" matInput
+                        placeholder="Enter here"
+                        required 
+                        [(ngModel)]="students.surname"
+                        >
+                   
+                     </mat-form-field>
+
+                     <mat-form-field class="w100" appearance="outline">
+                  
+                        <mat-label>Student Address</mat-label>
+                   
+                        <input type="text" name="address" matInput
+                        placeholder="Enter here"
+                        required 
+                        [(ngModel)]="students.address"
+                        >
+                   
+                     </mat-form-field>
+                
+                     <mat-form-field class="w100" appearance="outline">
+                  
+                        <mat-label>Student number</mat-label>
+                   
+                        <input type="number" name="number" matInput
+                        placeholder="Enter here"
+                        required 
+                        [(ngModel)]="students.number"
+                        >
+                   
+                     </mat-form-field>
+
+                      <!--category selects-->
+                  <mat-form-field appearance="fill">
+                    <mat-label>Class</mat-label>
+                    <mat-select  name="classroom" [(ngModel)]="students.classroom.cid">
+                      <mat-option *ngFor="let c of classrooms" [value]="c.cid">
+                        {{c.classname}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                    
+                     <div class="container text-center mt15">
+                        <button mat-raised-button color="primary">Add New Students</button>
+                     </div>
+                  
+                  </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                  </mat-card-content>
+                </mat-card> 
+                
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.sidebar{
+    margin-top: 20px ;
+}
+.sidebar2:hover{
+ background-color: mediumspringgreen;
+ box-shadow: 10px 7px;
+}
+.dhashback{
+    background-image: linear-gradient(to left,lightgreen,rgb(56, 66, 154));
+}
+.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+}

@@ -1,0 +1,23 @@
+
+<body>
+    <div class="bootstrap-wrapper">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-4" *ngFor="let s of subjects">
+                <mat-card class="mt20 ml10, spd">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>{{s.subname}}</mat-card-title>
+                        <mat-card-subtitle>{{classname}}</mat-card-subtitle>
+                      </mat-card-header>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The programming language are used to write software programe that can run a computer of electronics devices.</p>
+                    <br><br><br>
+                    <hr>
+                    <button mat-raised-button color="primary" [routerLink]="'/user-dashboard/teachers/'+s.subid+'/'+s.subname" >Teachers</button>
+                </mat-card>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>

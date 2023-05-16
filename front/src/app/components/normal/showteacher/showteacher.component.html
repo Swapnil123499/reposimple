@@ -1,0 +1,40 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="mat-card ">
+            <h1><b><i>The teachers in subject</i></b></h1>
+        </div>
+        <div class="mat-card mt20 ">
+            <table border="2px" cellPadding="3px"  [cellSpacing]="'0px'" class="tab">
+                <tr>
+                    <th>
+                        sr no.
+                    </th>
+                    <th>
+                        name
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        number
+                    </th>
+                </tr>
+                <tr *ngFor="let t of teachers; let i=index">
+                    <td>
+                        {{i+1}}
+                    </td>
+                    <td>
+                        {{t.tname}}
+                    </td>
+                    <td>
+                        {{t.address}}
+                    </td>
+                    <td>
+                        {{t.tphone}}
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>

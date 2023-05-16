@@ -1,0 +1,12 @@
+.example-header-image {
+    background-image: url('/assets/students.png');
+    background-size: cover;
+  }
+  .spd:hover{
+    background-color: aquamarine;
+    box-shadow: 15px 10px;
+
+  }
+  body{
+    background-image: url('/assets/backimage.jpg');
+}

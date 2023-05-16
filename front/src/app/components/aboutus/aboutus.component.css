@@ -1,0 +1,12 @@
+.text-center{
+    text-align: center;
+}
+.about-1 h1{
+    margin: 30px;
+    padding: 5px;
+}
+.hover:hover{
+    background-color: aqua;
+    box-shadow: 10px 10px;
+    
+}

@@ -1,0 +1,59 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <mat-card class="matclass">
+                    <h1>Add New Students</h1>
+                  <mat-card-content>
+                
+                    <div class="bootstrap-wrapper">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                               
+                <form (ngSubmit)="formSubmit()">
+                
+                    <mat-form-field class="w100" appearance="outline">
+                  
+                       <mat-label>Subject  Name</mat-label>
+                  
+                       <input type="text" name="subname" matInput
+                       placeholder="Enter here"
+                       required 
+                       [(ngModel)]="subjects.subname"
+                       >
+                  
+                    </mat-form-field>
+
+                    
+
+                     
+                
+                     
+
+                      <!--category selects-->
+                  <mat-form-field appearance="fill">
+                    <mat-label>Class</mat-label>
+                    <mat-select  name="classroom" [(ngModel)]="subjects.classr.cid">
+                      <mat-option *ngFor="let c of classrooms" [value]="c.cid">
+                        {{c.classname}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                    
+                     <div class="container text-center mt15">
+                        <button mat-raised-button color="primary">Add New Subjects</button>
+                     </div>
+                  
+                  </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                  </mat-card-content>
+                </mat-card> 
+                
+
+            </div>
+        </div>
+    </div>
+</div>

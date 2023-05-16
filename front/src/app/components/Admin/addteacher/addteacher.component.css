@@ -1,0 +1,14 @@
+.containt{
+    margin-top: 25px;
+}
+.w100{
+    width: 100%;
+}
+.container{
+    margin-top: 20px;
+}
+.matclass:hover{
+    background-color: azure;
+    box-shadow: 10px 5px;
+
+}

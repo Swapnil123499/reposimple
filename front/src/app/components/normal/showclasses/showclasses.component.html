@@ -1,0 +1,35 @@
+<body>
+    
+    <div class="bootstrap-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-md-8 offset-md-2">
+                     <!-- <mat-card class="mt20">-->
+                        <div class="container">
+                            <div class="row">
+                               <div class="col-md-4" *ngFor="let c of classrooms">
+                                <mat-card class="mt20 spd">
+                                    <mat-card-header>
+                                        <div mat-card-avatar class="example-header-image"></div>
+                                        <mat-card-title>{{c.classname}}</mat-card-title>
+                                        <mat-card-subtitle>It is the class name</mat-card-subtitle>
+                                      </mat-card-header>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The programming language are used to write software programe that can run a computer of electronics devices.</p>
+                                    <br><br><br>
+                                    <hr>
+                                    <button mat-raised-button color="primary" [routerLink]="'/user-dashboard/student/'+c.cid+'/'+c.classname" >Students</button>
+                                    <button mat-raised-button color="primary" class="ml20" [routerLink]="'/user-dashboard/subject/'+c.cid+'/'+c.classname" >Subjects</button>
+
+                                </mat-card>
+                               </div>
+                            </div>
+                        </div>
+                     <!-- </mat-card>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+

@@ -1,0 +1,76 @@
+
+
+<body class="dhashback">
+    
+
+<div class="bootstrap-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <mat-card class="sidebar transbox">
+                <mat-action-list>
+                    <mat-card class="sidebar2">
+                        <mat-icon mat-list-icon><span>home</span></mat-icon>
+                    <ul>
+                        
+                        <span> </span>
+                                <a  style="font-size: 20px;"
+                            mat-icon-item  >
+                            Home
+                        </a>
+                         
+                        </ul>
+                             
+                             </mat-card>
+                           
+                   
+                   <br>
+                   <br>
+                   <mat-card class="sidebar2">
+                    <mat-icon mat-list-icon><span>folder</span></mat-icon>
+                    <ul>   <a routerLink="addclass"
+                        mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                           <h2>Add class</h2>
+                         </a>
+                       </ul>
+                   </mat-card>
+                   <br><br>
+                    <mat-card class="sidebar2">
+                        <mat-icon mat-list-icon><span>folder</span></mat-icon>
+                        <ul>   <a routerLink="addstudent"
+                            mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                               <h2>Add Student</h2>
+                             </a>
+                           </ul>
+                    </mat-card>
+                    <br><br>
+                        <mat-card class="sidebar2">
+                            <mat-icon mat-list-icon><span>folder</span></mat-icon>
+                            <ul>   <a routerLink="addsubject"
+                                mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                                   <h2>Add Subject</h2>
+                                 </a>
+                               </ul>
+                        </mat-card>
+                        <br><br>
+                            <mat-card class="sidebar2">
+                                <mat-icon mat-list-icon><span>folder</span></mat-icon>
+                                <ul>   <a routerLink="addteacher"
+                                    mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                                       <h2>Add Teacher</h2>
+                                     </a>
+                                   </ul>
+                            </mat-card>
+                            <br><br>
+                            
+                            </mat-action-list>
+                </mat-card>
+            </div>
+            <div class="col-md-9">
+                <router-outlet></router-outlet>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
